@@ -4,7 +4,7 @@ const StarsFC = ({count = 0}) => {
     let stars = [];
     if (count > 0 && count <= 5) {
         for (let i = 1; i <= count; i++) {
-            stars.push(<StarFC/>);
+            stars.push(<StarFC id={i}/>);
         }
     }
 
